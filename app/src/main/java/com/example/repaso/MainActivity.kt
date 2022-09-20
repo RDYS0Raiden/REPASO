@@ -51,8 +51,11 @@ class MainActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
     private fun speakMessage() {
 
         mensaje = "Como estas bro  maquina fiera tifon master  jefe   numero uno."
+
         txtMensaje.text = mensaje
+
         tts.speak(mensaje, TextToSpeech.QUEUE_FLUSH, null, "")
+
     }
 
     //verificar el esatado de tu comando de voz
@@ -69,6 +72,6 @@ class MainActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
             "Estado funcional correcto"
         } else "Algo salio mal,pruebe despues"
         Toast.makeText(this, resultado, Toast.LENGTH_SHORT).show()
-
+        //;)
     }
 }
